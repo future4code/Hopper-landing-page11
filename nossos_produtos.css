@@ -36,6 +36,12 @@ nav > ul {
     padding-right: 300px;
 }
 
+h2{
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Beau Rivage', cursive;
+}
+
 nav > ul > li {
     padding: 0 20px;
     display: inline-block;
@@ -45,10 +51,6 @@ nav > ul > li {
     font-weight: bold;
 }
 
-h2{
-    padding-top: 2rem;
-    text-align: center;
-}
 
 .produtos{
     display: grid;
@@ -64,10 +66,15 @@ h2{
 
 .nome-comida{
     padding-top: 10px;
+
+    font-weight: bold;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 2rem;
 }
 
 .preço{
     padding: 10px 0;
+    font-weight: bold;
 }
 
 .comprar{
@@ -83,9 +90,9 @@ h2{
 
 
 .comprar:hover{
-    font-size: 1.5rem;
-    transition-delay: 50ms;
     transition-duration: 200ms;
+    background-color:rgb(12, 137, 62);
+    color: white;
 }
 
 
