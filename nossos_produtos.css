@@ -40,8 +40,8 @@ h2{
     padding-top: 2rem;
     text-align: center;
     font-family: 'Beau Rivage', cursive;
-
 }
+
 nav > ul > li {
     padding: 0 20px;
     display: inline-block;
@@ -66,6 +66,7 @@ nav > ul > li {
 
 .nome-comida{
     padding-top: 10px;
+
     font-weight: bold;
     font-family: 'Beau Rivage', cursive;
     font-size: 2rem;
