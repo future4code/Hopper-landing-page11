@@ -13,6 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    
 }
 
 .Logo {
@@ -36,11 +37,7 @@ nav > ul {
     padding-right: 300px;
 }
 
-h2{
-    padding-top: 2rem;
-    text-align: center;
-    font-family: 'Beau Rivage', cursive;
-}
+
 
 nav > ul > li {
     padding: 0 20px;
@@ -50,10 +47,17 @@ nav > ul > li {
     font-size: 20px;
     font-weight: bold;
 }
+h2{
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Beau Rivage', cursive;
+    background-color: #e7e6e4;
+}
 
 
 .produtos{
     display: grid;
+    background-color: #e7e6e4;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 100px;
@@ -66,7 +70,6 @@ nav > ul > li {
 
 .nome-comida{
     padding-top: 10px;
-
     font-weight: bold;
     font-family: 'Beau Rivage', cursive;
     font-size: 2rem;
@@ -142,4 +145,49 @@ li{
     font-size: 15px;
 
 
+}
+
+@media screen and (max-device-width: 800px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+        body{
+            max-width: 100%;
+            
+        }
+       header{
+           max-width: 100%;
+       }
+       nav > ul{
+        padding:0;
+        display: flex;
+        width: 100%;
+       }  
+
+       nav > ul > li{
+        width: 100%;
+        padding-left: 0px;
+        font-size: 17px;
+        
+        
+       }
+       
+       
+       main{
+           display: flex;
+           flex-direction: column;
+           height: 100%;
+       }
+       .produtos{
+           display: flex;
+           flex-direction: column;
+       }
+
+       .Logo{
+           display: flex;
+           margin: 0;
+           max-width: 120px;
+           height: 120px;
+       }
 }
