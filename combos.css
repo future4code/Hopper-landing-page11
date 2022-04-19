@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #A3AB78;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-right: 200px;
+}
+
+.Logo {
+    width: 150px;
+    margin-left: 150px;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: black;
+    width: 65px;
+}
+
+nav a:hover {
+    color: azure;
+}
+
+header > ul {
+    padding-right: 300px;
+
+}
+
+li {
+    padding: 0 20px;
+    display: inline-block;
+    align-items: center;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* body */
+main > div > h1 {
+    padding: 0 20px;
+    display: inline-block;
+    align-items: center;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+main > section > div > ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nomecombos{
+    display: flex;
+    justify-content: center;   
+}
+
+
+.combosgrupo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 5px;
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 30px;
+}
+
+.combo{
+    text-align: center;
+    border-radius: 0.5rem;
+
+}
+
+img{
+    height: 200px;
+    border-radius: 0.5rem;
+}
+
+.combo > ul > li {
+    list-style: none;
+}
+
+button{
+    background-color: green;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+
+/* ******************** rodapé **************** */
+
+body{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;  
+}
+#mobile {
+    background-color: #cfb698;
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.app {
+    margin-top: 30px;
+    margin-left: 200px;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 30px;
+
+
+
+
+
+}
+
+.app img {
+    width: 250px;
+    height: 100px;
+    padding-top: 30px;
+
+}
+
+
+.redes-sociais {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 300px;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 30px;
+
+}
+
+.redes-sociais img {
+    width: 70px;
+    height: 70px;
+    padding-top: 30px;
+    
+
+
+}
+.redes-sociais img:hover{
+    transform: scale(1.10);
+}
+
+.alunos {
+    background-color: #cfb698;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+
+
+}
+
+.alunos p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+
+
+}
+
+
+
+/* ******** Responsividade ********************************************************* */
+
+@media screen and (max-device-width : 800px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    img{
+        height: 150px;
+        border-radius: 0.5rem;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .Logo{
+        display: flex;
+        margin: 0px;
+    }
+
+    .nomecombos{
+        display: flex;
+        justify-content: center;   
+    }
+
+    .combosgrupo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10px;
+
+    }
+
+    header{
+        /* max-width: 100%;
+        padding-right: 0px; */
+        display: flex;
+        justify-content: flex-start;
+        /* padding-left: 0px; */
+        align-items: center;
+        /* width: 100%; */
+    }
+
+    /* body{
+        display: flex;
+        flex-direction: column; 
+    } */
+    /* main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    #mobile{
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        overflow-x: hidden;
+    }   
+
+    .app{
+        font-size: 20px;
+        margin-left: 120px;
+        font-weight: bold;
+    
+    
+    }    
+    
+    .app img{
+        width: 170px;
+        
+    }
+    
+    .redes-sociais{
+        font-size: 20px;
+        margin-left: 120px;
+        font-weight: bold;
+        
+        
+    }
+    .redes-sociais img{
+        
+        width: 35px;
+        height: 35px;
+    }
+    
+    
+    .redes-sociais p{
+        width: 150px;
+    }
+    
+    footer{
+        margin: 0px;
+        width: 100%;
+    }
+    .alunos p{
+        font-size: 12px;
+        margin-top: 15px;  
+        text-align: center;
+        
+    }
+
+    .alunos{
+        background-color: #cfb698;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        /* width: 100%; */
+    }
+
+}
